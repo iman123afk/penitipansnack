@@ -1,0 +1,411 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+/* Header */
+.header {
+    background-color: #1f1f26;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 60px;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.header .logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+/* Main Content */
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px);
+    text-align: center;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap; /* Membungkus elemen jika melebihi ruang */
+    gap: 20px; /* Jarak antar kontainer */
+    justify-content: flex-start; /* Kontainer mulai dari kiri */
+    padding: 20px;
+}
+
+.product {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(25% - 20px); /* Lebar 25% untuk 4 kolom */
+    text-align: center;
+    max-width: calc(25% - 20px);
+    margin: 0;
+}
+
+.product img {
+    max-width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: block;
+}
+
+.product p {
+    margin: 10px 0 0; /* Spasi antara elemen */
+    font-size: 16px;
+    color: #333;
+}
+
+.product .description {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5; /* Spasi antar baris */
+}
+
+.left-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left-section img {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.left-section h1 {
+    font-size: 40px;
+    color: #333;
+}
+
+.right-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px 40px;
+    width: 300px;
+}
+
+.login-box h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 10px;
+    background-color: #1f1f26;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-box button:hover {
+    background-color: #333;
+}
+
+.login-box a {
+    display: block;
+    margin: 10px 0;
+    color: #555;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.login-box a:hover {
+    text-decoration: underline;
+}
+
+/*dashboard user */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #222831;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header .logo img {
+    width: 50px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+header nav {
+    display: flex;
+    gap: 15px;
+}
+
+header nav button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #eee;
+    color: #333;
+    font-size: 14px;
+}
+
+header nav button.active,
+header nav button:hover {
+    background-color: #468FAF;
+    color: #fff;
+}
+
+.hero {
+    background-color: #3A5A69;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 0 0 30px 30px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero .search {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.hero .search input {
+    width: 300px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px 0 0 20px;
+}
+
+.hero .search button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    background-color: #222831;
+    color: #fff;
+    cursor: pointer;
+}
+
+.hero .search button:hover {
+    background-color: #555;
+}
+
+.container {
+    padding: 20px;
+    justify-content: flex-end;
+}
+
+.category-title {
+    margin: 20px 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.products {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.product {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(25% - 15px);
+    text-align: center;
+}
+
+.product img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.product p {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.filter {
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.filter button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #eee;
+    color: #333;
+}
+
+.filter button.active {
+    background-color: #468FAF;
+    color: #fff;
+}
+
+.filter button:hover {
+    background-color: #468FAF;
+    color: #fff;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid #ccc;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background-color: #f4f4f4;
+}
+
+.keranjang-img {
+    max-width: 60px; /* Ukuran maksimum gambar */
+    height: auto;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+}
+
+.btn-keranjang {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.btn-keranjang:hover {
+    background-color: #0056b3;
+}
+
+.btn-beli {
+    padding: 10px 15px;
+    background-color: #28A745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-beli:hover {
+    background-color: #218838;
+}
+
+.btn-update {
+    background-color: #4CAF50; /* Hijau */
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn-update:hover {
+    background-color: #45a049;
+}
+
+/* Tombol Hapus */
+.btn-remove {
+    background-color: #f44336; /* Merah */
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn-remove:hover {
+    background-color: #d32f2f;
+}
+
+/* Tombol Checkout */
+.btn-checkout {
+    background-color: #2196F3; /* Biru */
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    text-align: left;
+}
+
+.btn-checkout:hover {
+    background-color: #1976D2;
+}
